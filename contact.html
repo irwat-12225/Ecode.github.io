@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ECODER</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-mountain"></i> ECODER
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#actualites">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#jeunesse">Jeunesse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#opportunites">Opportunités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Nous Contacter</h1>
+                    <p class="lead">Entrez en contact avec ECODER et rejoignez le mouvement de développement</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <i class="fas fa-envelope" style="font-size: 5rem; opacity: 0.3;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row g-4">
+            <!-- Contact Form -->
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <h2 class="h3 fw-bold text-primary mb-4">Envoyez-nous un message</h2>
+                        <form id="contact-form">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="nom" class="form-label fw-bold">Nom complet </label>
+                                    <input type="text" class="form-control form-control-lg" id="nom" placeholder="Votre nom" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label fw-bold">Email </label>
+                                    <input type="email" class="form-control form-control-lg" id="email" placeholder="votre@email.com" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="telephone" class="form-label fw-bold">Téléphone</label>
+                                    <input type="tel" class="form-control form-control-lg" id="telephone" placeholder="+243 XXX XXX XXX">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="sujet" class="form-label fw-bold">Sujet </label>
+                                    <select class="form-select form-select-lg" id="sujet" required>
+                                        <option value="">Sélectionnez un sujet</option>
+                                        <option value="adhesion">Adhésion à ECODER</option>
+                                        <option value="opportunite">Opportunité d'emploi</option>
+                                        <option value="formation">Formation/Éducation</option>
+                                        <option value="projet">Proposition de projet</option>
+                                        <option value="partenariat">Partenariat</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-bold">Message </label>
+                                <textarea class="form-control" id="message" rows="6" placeholder="Votre message ici..." required></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="consentement" required>
+                                <label class="form-check-label" for="consentement">
+                                    J'accepte les conditions d'utilisation et la politique de confidentialité
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-lg mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold text-primary mb-4">
+                            <i class="fas fa-map-marker-alt me-2"></i>Localisation
+                        </h5>
+                        <p class="text-muted mb-0">
+                            Secteur Ruwenzori<br>
+                            Beni, République Démocratique du Congo
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-lg mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold text-primary mb-4">
+                            <i class="fas fa-phone me-2"></i>Téléphone
+                        </h5>
+                        <p class="text-muted">
+                            <i class="fas fa-mobile-alt me-2 text-success"></i>
+                            <strong>+243 XXX XXX XXX</strong>
+                        </p>
+                        <p class="text-muted mb-0">
+                            Disponible du lundi au vendredi<br>
+                            De 8h à 17h (heure de Kinshasa)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-lg mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold text-primary mb-4">
+                            <i class="fas fa-envelope me-2"></i>Email
+                        </h5>
+                        <p class="text-muted mb-2">
+                            <strong>contact@ecoder.org</strong><br>
+                            <small>Inquiries générales</small>
+                        </p>
+                        <p class="text-muted mb-0">
+                            <strong>support@ecoder.org</strong><br>
+                            <small>Support technique</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold text-primary mb-4">
+                            <i class="fas fa-share-alt me-2"></i>Réseaux sociaux
+                        </h5>
+                        <div class="d-flex gap-2">
+                            <a href="https://web.facebook.com/wacongont" class="btn btn-sm btn-outline-primary">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/ecoder" class="btn btn-sm btn-outline-primary">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://web.whatsapp.com/" class="btn btn-sm btn-outline-primary">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/ecoder" class="btn btn-sm btn-outline-primary">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- FAQ Section -->
+        <section class="mb-5">
+            <h2 class="h2 fw-bold text-center text-primary mb-5">Questions Fréquentes</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Comment puis-je rejoindre l'initiative ECODER ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Vous pouvez rejoindre ECODER en remplissant le formulaire d'adhésion sur la page d'accueil 
+                                    ou en nous contactant directement via ce formulaire. Il n'y a aucun coût pour adhérer.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Y a-t-il des opportunités d'emploi disponibles ?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui ! ECODER met régulièrement à jour sa section Opportunités avec des offres d'emploi, 
+                                    des formations et des stages. Consultez régulièrement la page Opportunités pour les dernières offres.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Comment puis-je contribuer au développement du secteur ?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Il existe plusieurs façons de contribuer : rejoindre un projet, partager vos compétences, 
+                                    devenir mentor pour les jeunes, ou proposer des initiatives. Contactez-nous pour discuter 
+                                    de vos idées.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Quel est le rôle des universités dans ECODER ?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Les universités sont des partenaires clés. Elles collaborent avec ECODER pour : 
+                                    promouvoir l'éducation universitaire, offrir des bourses, créer des stages et 
+                                    développer la recherche appliquée au secteur.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Puis-je participer si je suis hors du secteur Ruwenzori ?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolument ! ECODER accueille tous les ressortissants, où qu'ils soient. 
+                                    Si vous êtes originaire du secteur Ruwenzori, vous pouvez contribuer à distance 
+                                    ou lors de vos visites.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">ECODER</h5>
+                    <p class="text-muted">
+                        Engagement pour la Construction et le Développement du secteur Ruwenzori
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Liens rapides</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="index.html" class="text-muted">Accueil</a></li>
+                        <li><a href="about.html" class="text-muted">À propos</a></li>
+                        <li><a href="contact.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Nous contacter</h5>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-envelope me-2"></i>contact@ecoder.org
+                    </p>
+                    <p class="text-muted">
+                        <i class="fas fa-phone me-2"></i>+243 XXX XXX XXX
+                    </p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted">
+                <small>&copy; 2026 ECODER. Tous droits réservés. | Secteur Ruwenzori, Beni</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <script>
+        // Contact Form Handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = {
+                nom: document.getElementById('nom').value,
+                email: document.getElementById('email').value,
+                telephone: document.getElementById('telephone').value,
+                sujet: document.getElementById('sujet').value,
+                message: document.getElementById('message').value,
+                date: new Date().toLocaleDateString('fr-FR'),
+                heure: new Date().toLocaleTimeString('fr-FR')
+            };
+
+            // Save to localStorage
+            let messages = JSON.parse(localStorage.getItem('ecoder_messages')) || [];
+            messages.push(formData);
+            localStorage.setItem('ecoder_messages', JSON.stringify(messages));
+
+            // Show success message
+            showAlert('Merci ! Votre message a été envoyé avec succès. Nous vous répondrons bientôt.', 'success');
+
+            // Reset form
+            document.getElementById('contact-form').reset();
+        });
+    </script>
+</body>
+</html>

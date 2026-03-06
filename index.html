@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECODER - Engagement pour la Construction et le Développement du secteur Ruwenzori</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-mountain"></i> ECODER
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#actualites">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jeunesse">Jeunesse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#opportunites">Opportunités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Slideshow Container -->
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="images/JENI1.jpg" alt="ECODER Slide 1">
+            </div>
+            <div class="slide ">
+                <img src="images/ECO2.jpg" alt="ECODER Slide 2">
+            </div>
+            <div class="slide ">
+                <img src="images/JENI1.jpg" alt="ECODER Slide 3">
+            </div>
+            <div class="slide">
+                <img src="images/JENI.jpg" alt="ECODER Slide 4">
+            </div>
+            <div class="slide">
+                <img src="images/JEN.jpg" alt="ECODER Slide 5">
+            </div>
+            <div class="slide">
+                <img src="images/pres.jpg" alt="ECODER Slide 6">
+            </div>
+            <div class="slide">
+                <img src="images/JENI1.jpg" alt="ECODER Slide 7">
+            </div>
+            <div class="slide">
+                <img src="images/ECO2.jpg" alt="ECODER Slide 8">
+            </div>
+
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+            <!-- Dots for indicator -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
+        </div>
+
+        <div class="container-fluid hero-overlay">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-3 fw-bold mb-4">
+                        <i class="fas fa-mountain me-3"></i>ECODER
+                    </h1>
+                    <p class="lead mb-4">
+                       <strong> <SPan style="color: rgb(255, 146, 4);">E</SPan>ngagement pour la <SPan style="color: rgb(255, 146, 4);">Co</SPan>nstruction et le <SPan style="color: rgb(255, 146, 4);">Dé</SPan>veloppement du secteur <SPan style="color: rgb(255, 146, 4);">R</SPan>uwenzori</strong>
+                    </p>
+                    <p class="h5 mb-5">
+                        <strong>Ensemble, construisons notre secteur Ruwenzori</strong>
+                    </p>
+                    <div>
+                        <a href="#rejoindre" class="btn btn-success btn-lg me-3 mb-2">
+                            <i class="fas fa-handshake me-2"></i>Rejoindre l'initiative
+                        </a>
+                        <a href="about.html" class="btn btn-outline-light btn-lg mb-2">
+                            <i class="fas fa-info-circle me-2"></i>En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="h3 fw-bold text-primary mb-3">Une initiative citoyenne pour le développement</h2>
+                    <p class="text-muted mb-3">
+                        ECODER est une initiative de mobilisation communautaire lancée par les ressortissants du secteur Ruwenzori, 
+                        notamment par Maître Ntimbia Baraka Kabwemi et d'autres leaders engagés.
+                    </p>
+                    <p class="text-muted mb-3">
+                        Notre objectif est de rassembler tous les habitants et ressortissants du secteur pour contribuer activement 
+                        au développement durable et à la prospérité de la région.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="feature-box">
+                                <i class="fas fa-book text-success"></i>
+                                <h5 class="mt-2">Éducation</h5>
+                                <p class="small">Encourager les études universitaires</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="feature-box">
+                                <i class="fas fa-briefcase text-success"></i>
+                                <h5 class="mt-2">Emploi</h5>
+                                <p class="small">Lutter contre le chômage</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <img src="images/logo.jpg" alt="ECODER" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectifs Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="h2 fw-bold text-center text-primary mb-5">Nos Objectifs Principaux</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100 text-center card-hover">
+                        <div class="card-body">
+                            <i class="fas fa-community fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Mobilisation</h5>
+                            <p class="card-text text-muted">Rassembler les ressortissants et la population</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100 text-center card-hover">
+                        <div class="card-body">
+                            <i class="fas fa-graduation-cap fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">Éducation</h5>
+                            <p class="card-text text-muted">Promotion de l'éducation universitaire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100 text-center card-hover">
+                        <div class="card-body">
+                            <i class="fas fa-chart-line fa-3x text-info mb-3"></i>
+                            <h5 class="card-title">Développement</h5>
+                            <p class="card-text text-muted">Développement durable du secteur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100 text-center card-hover">
+                        <div class="card-body">
+                            <i class="fas fa-handshake fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Collaboration</h5>
+                            <p class="card-text text-muted">Partenariat avec les autorités locales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actualités Section -->
+    <section id="actualites" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="h2 fw-bold text-center text-primary mb-5">Dernières Actualités</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 card-hover">
+                        <div class="card-img-top bg-primary text-white p-5 text-center">
+                            <i class="fas fa-users fa-4x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Lancement de l'initiative</h5>
+                            <p class="card-text text-muted small">Février 2026</p>
+                            <p class="card-text">Réunion citoyenne de mobilisation des ressortissants du secteur Ruwenzori.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 card-hover">
+                        <div class="card-img-top bg-success text-white p-5 text-center">
+                            <i class="fas fa-book fa-4x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Programme d'éducation</h5>
+                            <p class="card-text text-muted small">En cours</p>
+                            <p class="card-text">Encouragement des jeunes à poursuivre les études universitaires.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 card-hover">
+                        <div class="card-img-top bg-info text-white p-5 text-center">
+                            <i class="fas fa-briefcase fa-4x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Opportunities d'emploi</h5>
+                            <p class="card-text text-muted small">En cours</p>
+                            <p class="card-text">Lutte contre le chômage et création d'opportunités pour les jeunes.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jeunesse Section -->
+    <section id="jeunesse" class="py-5">
+        <div class="container">
+            <h2 class="h2 fw-bold text-center text-primary mb-5">Jeunesse & Éducation</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="bg-primary text-white p-5 rounded shadow-lg">
+                        <h3 class="fw-bold mb-4">Poursuivre vos études</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle me-2"></i>
+                                Cursus universitaires recommandés
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle me-2"></i>
+                                Bourses et financements A venir
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle me-2"></i>
+                                Mentorat et accompagnement A venir
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle me-2"></i>
+                                Opportunités de stages A venir
+                            </li>
+                        </ul>
+                        <button class="btn btn-light btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#jeunesse-modal">
+                            Inscrivez-vous
+                        </button>
+                    </div>
+                </div>
+                <div class="iframe-container col-lg-6" >
+                    <img src="images/eco1.jpg" alt="Jeunesse" class="img-fluid rounded shadow-lg" style="max-width: 128%; height: auto;padding: 10px;margin: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opportunités Section -->
+    <section id="opportunites" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="h2 fw-bold text-center text-primary mb-5">Opportunités</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary"><i class="fas fa-book me-2"></i>Formations</h5>
+                            <p class="card-text text-muted">
+                                Découvrez les formations et cursus disponibles pour développer vos compétences.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Voir les formations</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title text-success"><i class="fas fa-briefcase me-2"></i>Emplois</h5>
+                            <p class="card-text text-muted">
+                                Consultez les offres d'emploi et stages disponibles dans le secteur.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Voir les offres</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title text-info"><i class="fas fa-lightbulb me-2"></i>Projets</h5>
+                            <p class="card-text text-muted">
+                                Partez à la découverte des projets de développement du secteur.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Voir les projets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rejoindre Section -->
+    <section id="rejoindre" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="h3 fw-bold mb-2">Rejoindre l'initiative ECODER</h2>
+                    <p class="lead mb-0">Devenez un acteur du développement du secteur Ruwenzori</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#adherent-modal">
+                        <i class="fas fa-user-plus me-2"></i>Devenir membre
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">ECODER</h5>
+                    <p class="text-muted">
+                        Engagement pour la Construction et le Développement du secteur Ruwenzori
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Liens rapides</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#home" class="text-muted">Accueil</a></li>
+                        <li><a href="about.html" class="text-muted">À propos</a></li>
+                        <li><a href="contact.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Nous contacter</h5>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-envelope me-2"></i>contact@ecoder.org
+                    </p>
+                    <p class="text-muted">
+                        <i class="fas fa-phone me-2"></i>+243 XXX XXX XXX
+                    </p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted">
+                <small>&copy; 2026 ECODER. Tous droits réservés. | Secteur Ruwenzori, Beni</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Adhésion -->
+    <div class="modal fade" id="adherent-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title fw-bold">Devenir membre ECODER</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="adhesion-form">
+                        <div class="mb-3">
+                            <label for="nom" class="form-label">Nom complet</label>
+                            <input type="text" class="form-control" id="nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="profession" class="form-label">Profession/Secteur</label>
+                            <input type="text" class="form-control" id="profession">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telephone" class="form-label">Téléphone</label>
+                            <input type="tel" class="form-control" id="telephone">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-paper-plane me-2"></i>Envoyer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
